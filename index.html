@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Pseudo 3D BG Portrait  </title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+
+  <div class="bill">
+    <div class="bill__ears"></div>
+    <div class="bill__head"></div>
+    <div class="bill__face"></div>
+    
+    <!-- SVG eyes - cursor stalking -->
+    <svg class="bill__eyes" width="378px" height="504px" viewBox="0 0 378 504">
+      <defs>
+        <pattern id="bill__pupil" patternUnits="objectBoundingBox" x="0%" width="100%" height="100%">
+          <use xlink:href="#pupil"></use>
+        </pattern>
+        <image id="pupil" width="22" height="22" xlink:href="https://www.dropbox.com/s/zsbl0bjvk3pk0li/bill__pupil.png?raw=1"></image>
+      </defs>
+      <g transform="translate(134, 202)">
+        <circle class="eyeball" fill="#FFF" cx="23" cy="23" r="23" />
+        <circle id="pupil__left" fill="url(#bill__pupil)" cx="23" cy="23" r="11" />
+      </g>
+      <g transform="translate(237, 207)">
+        <circle calss="eyeball" fill="#FFF" cx="23" cy="23" r="23"/>
+        <circle id="pupil__right" fill="url(#bill__pupil)" cx="23" cy="23" r="11" />
+      </g>
+      <image x="0" y="0" width="378" height="504" xlink:href="https://www.dropbox.com/s/uxtd66wodz4lltj/bill__eyes--hollow.png?raw=1" />
+    </svg>
+
+    <div class="bill__glasses"></div>
+    <div class="bill__nose"></div>
+  </div>
+
+</body>
+<!-- partial -->
+  <script  src="script.js"></script>
+
+</body>
+</html>

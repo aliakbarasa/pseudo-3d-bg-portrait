@@ -1,0 +1,90 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  overflow-y: scroll;
+  perspective: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fff;
+}
+
+.bill {
+  width: 100%;
+  height: 80vh;
+  margin: 0 auto;
+  transform-style: preserve-3d;
+  filter: drop-shadow(0 30px 50px rgba(0,0,0,0.3));
+}
+
+.bill__ears,
+.bill__head,
+.bill__eyes,
+.bill__face,
+.bill__glasses,
+.bill__nose {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.bill__ears {
+  background: url("https://www.dropbox.com/s/6s6k10h5a6l4d19/bill__ears.png?raw=1");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all .44s ease-out;
+}
+
+.bill__head {
+  transform: translateZ(10px);
+  background: url("https://www.dropbox.com/s/vow3fu7a6s74kal/bill__head.png?raw=1");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all .40s ease-out;
+}
+
+.bill__face {
+  transform: translateZ(20px);
+  background: url("https://www.dropbox.com/s/sshqps7u2a61j2r/bill__face.png?raw=1");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all .38s ease-out;
+}
+
+.bill__eyes {
+  transform: translateZ(30px);
+  transition: all .36s ease-out;
+}
+
+.bill__glasses {
+  transform: translateZ(40px);
+  background: url("https://www.dropbox.com/s/mvl1owt6y1z05d6/bill__glasses.png?raw=1");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all .34s ease-out;
+}
+
+.bill__nose {
+  transform: translateZ(50px);
+  background: url("https://www.dropbox.com/s/e1k10dj08h82sqy/bill__nose.png?raw=1");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all .34s ease-out;
+}
+
+#pupil__left {
+  transition: all .15s ease;
+}
+
+#pupil__right {
+  transition: all .15s ease;
+}
